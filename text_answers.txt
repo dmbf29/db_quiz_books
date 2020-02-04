@@ -1,10 +1,12 @@
 Q1 - What is a relational database?
 
+Tables connected to each other using foreign and primary keys
 
 
 Q2 - What are the different 'table relationships?'
 
-
+1:N One to many (author has many books)
+N:N Many to many (doctors & patients with consultations)
 
 Q3 - Consider this e-library service. An author, defined by his name have several books. A book, defined by its title and publishing year, has one author only. What's this simple database scheme. Please draw it!
 
@@ -16,6 +18,7 @@ Q4 - A user, defined by his email, can read several books. A book (e-book!!) can
 
 Q5 - What's the language to make queries to a database?
 
+SQL = Structured Query Language
 
 Q6 - What's the simple query to get books written before 1985?
 
@@ -27,14 +30,15 @@ Q7 - What's the simple query to get the 3 most recent books written by Jules Ver
 
 Q8 - What's the purpose of ActiveRecord?
 
-
+Maps the models to the DB (tables <> models and columns <> attributes). We can inherit methods to link models and the DB.
 
 Q9 - What's a migration?
 
+File to modify the DB schema (create tables, add/remove/change columns, etc.)
 
+- How do you run a migration?
 
-   - How do you run a migration?
-
+rake db:migrate
 
 Q10 - Complete migrations to create your e-library database
 
@@ -62,8 +66,8 @@ Database roadmap:
 1.) Draw schema (on db.lewagon.org for instance)
 2.) Code migrations
 3.) Code models
-  -> Associations
-  -> Validations
+-> Associations
+-> Validations
 
 
 
