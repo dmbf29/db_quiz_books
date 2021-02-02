@@ -1,10 +1,12 @@
 Q1 - What is a relational database?
 
-
+A set of tables (schema) that are connected through primary keys / foreign keys
 
 Q2 - What are the different 'table relationships?'
 
-
+1:N - one to many (a room has many patients)
+N:N - many to many (a patient has many doctors)
+1:1 - one to one
 
 Q3 - Consider this e-library service. An author, defined by his name have several books. A book, defined by its title and publishing year, has one author only. What's this simple database scheme. Please draw it!
 
@@ -16,6 +18,7 @@ Q4 - A user, defined by his email, can read several books. A book (e-book!!) can
 
 Q5 - What's the language to make queries to a database?
 
+SQL - Structured Query Language
 
 Q6 - What's the simple query to get books written before 1985?
 
@@ -27,14 +30,18 @@ Q7 - What's the simple query to get the 3 most recent books written by Jules Ver
 
 Q8 - What's the purpose of ActiveRecord?
 
-
+Connects our models to our database. AR creates attr_accessors for all of our columns.
+Gives you some pre-built methods to perform CRUD on the DB.
+AR is a design pattern. Ruby library named after the pattern.
 
 Q9 - What's a migration?
 
-
+  it is a script to modify the schema of our database.
+  ie: add a table, add a column, remove...
 
    - How do you run a migration?
 
+   rake db:migrate
 
 Q10 - Complete migrations to create your e-library database
 
