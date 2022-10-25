@@ -1,9 +1,11 @@
 Q1 - What is a relational database?
-
+a collection of tables that have a relationship linked by the primary and foreign keys
 
 
 Q2 - What are the different 'table relationships?'
-
+1:1 One to one
+1:N One to many
+N:N Many to many
 
 
 Q3 - Consider this e-library service. An author, defined by his name have several books. A book, defined by its title and publishing year, has one author only. What's this simple database scheme. Please draw it!
@@ -15,6 +17,8 @@ Q4 - A user, defined by his email, can read several books. A book (e-book!!) can
 - see db.lewagon.org example
 
 Q5 - What's the language to make queries to a database?
+SQL
+Structured Query Language
 
 
 Q6 - What's the simple query to get books written before 1985?
@@ -26,8 +30,9 @@ Q7 - What's the simple query to get the 3 most recent books written by Jules Ver
 -- see books controller
 
 Q8 - What's the purpose of ActiveRecord?
-
-
+- ActiveRecord gives us some methods to write basic SQL queries (build migrations and also retreive data)
+- Connects our schema with our models (all columns become attributes)
+-
 
 Q9 - What's a migration?
 
@@ -64,11 +69,3 @@ Database roadmap:
 3.) Code models
   -> Associations
   -> Validations
-
-
-
-
-
-
-
-
