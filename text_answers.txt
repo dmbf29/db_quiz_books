@@ -28,7 +28,7 @@ Q7 - What's the simple query to get the 3 most recent books written by Jules Ver
 -- see books controller
 
 Q8 - What's the purpose of ActiveRecord?
-
+Active Record is what we call an Object-Relational Mapping. Its purpose is to map the instance variables of our models in our Ruby program to the columns of the corresponding tables in our SQL database
 
 
 Q9 - What's a migration?
