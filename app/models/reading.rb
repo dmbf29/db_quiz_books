@@ -1,1 +1,4 @@
-class
+class Reading
+  belongs_to :book
+  belongs_to :user
+end
