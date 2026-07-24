@@ -1,5 +1,5 @@
 Q1 - What is a relational database?
-
+A relational database is a set of tables linked to each other by a system of primary keys and foreign keys
 
 
 Q2 - What are the different 'table relationships?'
@@ -64,11 +64,3 @@ Database roadmap:
 3.) Code models
   -> Associations
   -> Validations
-
-
-
-
-
-
-
-
