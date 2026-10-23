@@ -1,6 +1,8 @@
 # 1. Add your favorite author to the DB
 author = Author.new(name: 'Leo Tolstoy')
 author.save
+# normally for the seeds. or just testing. it creates instance AND saves
+author = Author.create(name: 'Leo Tolstoy')
 
 # 2. Get all authors
 authors = Author.all
